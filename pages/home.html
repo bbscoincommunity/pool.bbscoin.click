@@ -100,69 +100,69 @@
                     <td>Pair</td>
                     <!-- <td>Volume</td> -->
                     <td>Volume</td>
-                    <td>USD</td>
+                    <td>Price</td>
                 </tr>
             </thead>
             <tbody>
                 <tr class="tradeogre-btc hidden">
                     <td>TradeOgre</td>
-                    <td><a target="_blank" href="https://tradeogre.com/exchange/BTC-BBS">BTC / BBS</a></td>
+                    <td><a target="_blank" href="https://tradeogre.com/exchange/BTC-BBS">BTC/BBS</a></td>
                     <!-- <td><span id="volume_bbs_tradeogre">N / A</span></td> -->
                     <td><span id="volume_btc_tradeogre"></span></td>
                     <td><span id="volume_btcusd_tradeogre"></span></td>
                 </tr>
                 <tr class="tradeogre-ltc hidden">
                     <td>TradeOgre</td>
-                    <td><a target="_blank" href="https://tradeogre.com/exchange/LTC-BBS">LTC / BBS</a></td>
+                    <td><a target="_blank" href="https://tradeogre.com/exchange/LTC-BBS">LTC/BBS</a></td>
                     <!-- <td><span id="volume_bbs_tradeogre">N / A</span></td> -->
                     <td><span id="volume_ltc_tradeogre"></span></td>
                     <td><span id="volume_ltcusd_tradeogre"></span></td>
                 </tr>
                 <tr class="crex24 hidden">
                     <td>Crex24</td>
-                    <td><a target="_blank" href="https://crex24.com/exchange/BBS-BTC">BTC / BBS</a></td>
+                    <td><a target="_blank" href="https://crex24.com/exchange/BBS-BTC">BTC/BBS</a></td>
                     <!-- <td><span id="volume_bbs_crex24"></span></td> -->
                     <td><span id="volume_btc_crex24"></span></td>
                     <td><span id="volume_usd_crex24"></span></td>
                 </tr>
                 <tr class="btrx hidden">
                     <td>Bololex</td>
-                    <td><a target="_blank" href="https://bololex.com/trading?symbol=BBST-TRX">TRX / BBS</a></td>
+                    <td><a target="_blank" href="https://bololex.com/trading?symbol=BBST-TRX">TRX/BBST</a></td>
                     <!-- <td><span id="volume_bbs_btrx"></span></td> -->
                     <td><span id="volume_trx_btrx"></span></td>
                     <td><span id="volume_usd_btrx"></span></td>
                 </tr>
                 <tr class="busdt hidden">
                     <td>Bololex</td>
-                    <td><a target="_blank" href="https://bololex.com/trading?symbol=BBST-USDT">USDT / BBS</a></td>
+                    <td><a target="_blank" href="https://bololex.com/trading?symbol=BBST-USDT">USDT/BBST</a></td>
                     <!-- <td><span id="volume_bbs_busdt"></span></td> -->
                     <td><span id="volume_usdt_busdt"></span></td>
                     <td><span id="volume_usd_busdt"></span></td>
                 </tr>
                 <tr class="wbbs hidden">
                     <td>JustSwap</td>
-                    <td><a target="_blank" href="https://justswap.io/#/scan/detail/trx/TB3CjdHfkraU7MJLSQESYPY4U2CMKXi3LB">TRX / WBBS</a></td>
+                    <td><a target="_blank" href="https://justswap.io/#/scan/detail/trx/TB3CjdHfkraU7MJLSQESYPY4U2CMKXi3LB">TRX/WBBS</a></td>
                     <!-- <td><span id="volume_bbs_wbbs"></span></td> -->
                     <td><span id="volume_trx_wbbs"></span></td>
                     <td><span id="volume_usd_wbbs"></span></td>
                 </tr>
                 <tr class="alex-xmr hidden">
                     <td>altex.exchange</td>
-                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=XMR_BBS">XMR / BBS</a></td>
+                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=XMR_BBS">XMR/BBS</a></td>
                     <!-- <td><span id="volume_xmrbbs_altex"></span></td> -->
                     <td><span id="volume_xmr_altex"></span></td>
                     <td><span id="volume_xmrusd_altex"></span></td>
                 </tr>
                 <tr class="alex-btc hidden">
                     <td>altex.exchange</td>
-                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=BTC_BBS">BTC / BBS</a></td>
+                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=BTC_BBS">BTC/BBS</a></td>
                     <!-- <td><span id="volume_btcbbs_altex"></span></td> -->
                     <td><span id="volume_btc_altex"></span></td>
                     <td><span id="volume_btcusd_altex"></span></td>
                 </tr>
                 <tr class="alex-ltc hidden">
                     <td>altex.exchange</td>
-                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=LTC_BBS">LTC / BBS</a></td>
+                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=LTC_BBS">LTC/BBS</a></td>
                     <!-- <td><span id="volume_ltcbbs_altex"></span></td> -->
                     <td><span id="volume_ltc_altex"></span></td>
                     <td><span id="volume_ltcusd_altex"></span></td>
@@ -499,38 +499,38 @@
             var toltc = data[6];
             // $('#volume_bbs_crex24').text(parseInt(bbs['QuoteVolume']).toLocaleString() + ' BBS');
             $('#volume_btc_crex24').text(parseFloat(crex['volume'] * crex['price']).toFixed(11) + ' BTC');
-            $('#volume_usd_crex24').text('$' + parseFloat(crex['usd']).toFixed(6))
-            increment(crex['usd']);
+            $('#volume_usd_crex24').text(parseFloat(crex['price']).toFixed(6))
+            increment(crex['price']);
             $('.crex24').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
-	    $('#volume_trx_btrx').text(parseFloat(btrx['volume'] * btrx['price']).toFixed(11) + ' TRX');
-            $('#volume_usd_btrx').text('$' + parseFloat(btrx['usd']).toFixed(6))
-            increment(btrx['usd']);
+	    $('#volume_trx_btrx').text(parseFloat(btrx['volume'] * btrx['price']).toFixed(8) + ' TRX');
+            $('#volume_usd_btrx').text(parseFloat(btrx['price']).toFixed(6))
+            increment(btrx['price']);
             $('.btrx').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
-	    $('#volume_usdt_busdt').text(parseFloat(busdt['volume'] * busdt['price']).toFixed(11) + ' USDT');
-            $('#volume_usd_busdt').text('$' + parseFloat(busdt['usd']).toFixed(6))
-            increment(busdt['usd']);
+	    $('#volume_usdt_busdt').text(parseFloat(busdt['volume'] * busdt['price']).toFixed(8) + ' USDT');
+            $('#volume_usd_busdt').text(parseFloat(busdt['price']).toFixed(6))
+            increment(busdt['price']);
             $('.busdt').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
 	    $('#volume_trx_wbbs').text(parseFloat(wbbs['volume'] * wbbs['price']).toFixed(11) + ' TRX');
-            $('#volume_usd_wbbs').text('$' + parseFloat(wbbs['usd']).toFixed(6))
-            increment(crex['usd']);
+            $('#volume_usd_wbbs').text(parseFloat(wbbs['price']).toFixed(6))
+            increment(crex['price']);
             $('.wbbs').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
             $('#volume_btc_tradeogre').text(parseFloat(tobtc['volume'] * tobtc['price']).toFixed(8) + ' BTC');
-            $('#volume_btcusd_tradeogre').text('$' + parseFloat(tobtc['usd']).toFixed(6))
-            increment(tobtc['usd']);
+            $('#volume_btcusd_tradeogre').text(parseFloat(tobtc['price']).toFixed(6))
+            increment(tobtc['price']);
             $('.tradeogre-btc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
             $('#volume_ltc_tradeogre').text(parseFloat(toltc['volume'] * toltc['price']).toFixed(8) + ' LTC');
-            $('#volume_ltcusd_tradeogre').text('$' + parseFloat(toltc['usd']).toFixed(6))
-            increment(toltc['usd']);
+            $('#volume_ltcusd_tradeogre').text(parseFloat(toltc['price']).toFixed(6))
+            increment(toltc['price']);
             $('.tradeogre-ltc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
