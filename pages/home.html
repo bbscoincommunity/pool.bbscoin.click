@@ -470,24 +470,24 @@
         $.getJSON('https://www.tradecrypto.click/API?v=markets&o=price&q=BBS', function(data) {
 //        $.getJSON('https://pool.bbscoin.xyz/crex24', function(data) {
 //        $.getJSON('https://api.crex24.com/v2/public/orderBook?instrument=BBS-BTC', function(data) {
-            var crex = data[1];
-            var tobtc = data[2];
-            var toltc = data[3];
+            var crex = data[0];
+            var tobtc = data[1];
+            var toltc = data[2];
             // $('#volume_bbs_crex24').text(parseInt(bbs['QuoteVolume']).toLocaleString() + ' BBS');
-            $('#volume_btc_crex24').text(parseFloat(crex['volume'] * crex['price']).toFixed(8) + ' BTC');
-            $('#volume_usd_crex24').text('$' + parseFloat(crex['usd']).toFixed(2))
+            $('#volume_btc_crex24').text(parseFloat(crex['volume'] * crex['price']).toFixed(11) + ' BTC');
+            $('#volume_usd_crex24').text('$' + parseFloat(crex['usd']).toFixed(6))
             increment(crex['usd']);
             $('.crex24').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
             $('#volume_btc_tradeogre').text(parseFloat(tobtc['volume'] * tobtc['price']).toFixed(8) + ' BTC');
-            $('#volume_btcusd_tradeogre').text('$' + parseFloat(tobtc['usd']).toFixed(2))
+            $('#volume_btcusd_tradeogre').text('$' + parseFloat(tobtc['usd']).toFixed(6))
             increment(tobtc['usd']);
             $('.tradeogre-btc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 
             $('#volume_ltc_tradeogre').text(parseFloat(toltc['volume'] * toltc['price']).toFixed(8) + ' LTC');
-            $('#volume_ltcusd_tradeogre').text('$' + parseFloat(toltc['usd']).toFixed(2))
+            $('#volume_ltcusd_tradeogre').text('$' + parseFloat(toltc['usd']).toFixed(6))
             increment(toltc['usd']);
             $('.tradeogre-ltc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
