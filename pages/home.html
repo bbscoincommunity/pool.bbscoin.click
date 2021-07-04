@@ -494,7 +494,7 @@
 //		var ex=0;
 //		while (data[ex]) {
 		for (var ex=0; ex < data.length; ex++){
-            		var data[data[ex]['eid'] + data[ex]['market']] = data[ex];
+            		data[ data[ex]['eid'] + data[ex]['market'] ] = data[ex];
 /*
 		    $('#volume_'+ data[ex]['market'].tolower +'_'+ data[ex]['eid']).text(parseFloat(data[ex]['volume'] * data[ex]['price']).toFixed(8) + ' ' + data[ex]['market']);
 		    $('#volume_usd_'+ data[ex]['eid']).text(parseFloat(data[ex]['price']).toFixed(11))
