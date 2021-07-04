@@ -491,16 +491,16 @@
         $.getJSON('https://www.tradecrypto.click/API?v=markets&o=price&q=BBS%20BBST%20WBBS', function(data) {
 //        $.getJSON('https://pool.bbscoin.xyz/crex24', function(data) {
 //        $.getJSON('https://api.crex24.com/v2/public/orderBook?instrument=BBS-BTC', function(data) {
-		var ex=0;
-		while (data[ex]) {
+//		var ex=0;
+//		while (data[ex]) {
+		for (var ex=0; ex < data.length; ex++){
 //            	var data[data[ex]['eid']] = data[ex];
 	            $('#volume_'+ data[ex]['market'].tolower +'_'+ data[ex]['eid']).text(parseFloat(data[ex]['volume'] * data[ex]['price']).toFixed(8) + ' ' + data[ex]['market']);
 		    $('#volume_usd_'+ data[ex]['eid']).text(parseFloat(data[ex]['price']).toFixed(11))
             	    increment(data[ex]['price']);
         	    $('.'+ data[ex]['eid']).removeClass('hidden');
 	            $('#ticker').removeClass('hidden');
-
-		ex++;
+//		ex++;
 		}
 
 /*
