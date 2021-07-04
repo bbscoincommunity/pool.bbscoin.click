@@ -491,15 +491,22 @@
         $.getJSON('https://www.tradecrypto.click/API?v=markets&o=price&q=BBS%20BBST%20WBBS', function(data) {
 //        $.getJSON('https://pool.bbscoin.xyz/crex24', function(data) {
 //        $.getJSON('https://api.crex24.com/v2/public/orderBook?instrument=BBS-BTC', function(data) {
-            var btrx = data[0];
-            var busdt = data[1];
-            var crex = data[2];
-            var wbbs = data[4];
-            var tobtc = data[5];
-            var toltc = data[6];
-            // $('#volume_bbs_crex24').text(parseInt(bbs['QuoteVolume']).toLocaleString() + ' BBS');
-            $('#volume_btc_crex24').text(parseFloat(crex['volume'] * crex['price']).toFixed(8) + ' BTC');
-            $('#volume_usd_crex24').text(parseFloat(crex['price']).toFixed(11))
+		var ex=0;
+		while (data[ex]) {
+//            	var data[data[ex]['eid']] = data[ex];
+	            $('#volume_'+ data[ex]['market'].tolower +'_'+ data[ex]['eid']).text(parseFloat(data[ex]['volume'] * data[ex]['price']).toFixed(8) + ' ' + data[ex]['market']);
+		    $('#volume_usd_'+ data[ex]['eid']).text(parseFloat(data[ex]['price']).toFixed(11))
+            	    increment(data[ex]['price']);
+        	    $('.'+ data[ex]['eid']).removeClass('hidden');
+	            $('#ticker').removeClass('hidden');
+
+		ex++;
+		}
+
+/*
+	    // $('#volume_bbs_crex24').text(parseInt(bbs['QuoteVolume']).toLocaleString() + ' BBS');
+            $('#volume_btc_crex24').text(parseFloat(data['crex']['volume'] * crex['price']).toFixed(8) + ' BTC');
+            $('#volume_usd_crex24').text(parseFloat(data['crex']['price']).toFixed(11))
             increment(crex['price']);
             $('.crex24').removeClass('hidden');
             $('#ticker').removeClass('hidden');
@@ -533,7 +540,7 @@
             increment(toltc['price']);
             $('.tradeogre-ltc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
-
+*/
         });
 
 //      Create a 5 minute cache of tickers
