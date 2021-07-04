@@ -505,44 +505,49 @@
 //		ex++;
 		}
 
-
+	if (data['crex24BTC']) {
 	    // $('#volume_bbs_crex24').text(parseInt(bbs['QuoteVolume']).toLocaleString() + ' BBS');
             $('#volume_btc_crex24').text(parseFloat(data['crex24BTC']['volume'] * data['crex24BTC']['price']).toFixed(8) + ' BTC');
             $('#volume_usd_crex24').text(parseFloat(data['crex24BTC']['price']).toFixed(11))
             increment(data['crex24BTC']['price']);
             $('.crex24').removeClass('hidden');
             $('#ticker').removeClass('hidden');
-
+	}
+	if (data['bololexTRX']) {
 	    $('#volume_trx_btrx').text(parseFloat(data['bololexTRX']['volume'] * data['bololexTRX']['price']).toFixed(8) + ' TRX');
             $('#volume_usd_btrx').text(parseFloat(data['bololexTRX']['price']).toFixed(8))
             increment(data['bololexTRX']['price']);
             $('.btrx').removeClass('hidden');
             $('#ticker').removeClass('hidden');
-
+	}
+	if (data['bololexUSDT']) {
 	    $('#volume_usdt_busdt').text(parseFloat(data['bololexUSDT']['volume'] * data['bololexUSDT']['price']).toFixed(8) + ' USDT');
             $('#volume_usd_busdt').text(parseFloat(data['bololexUSDT']['price']).toFixed(8))
             increment(data['bololexUSDT']['price']);
             $('.busdt').removeClass('hidden');
             $('#ticker').removeClass('hidden');
-
+	}
+	if (data['justswapTRX']) {
 	    $('#volume_trx_wbbs').text(parseFloat(data['justswapTRX']['volume'] * data['justswapTRX']['price']).toFixed(6) + ' TRX');
             $('#volume_usd_wbbs').text(parseFloat(data['justswapTRX']['price']).toFixed(6))
             increment(data['justswapTRX']['price']);
             $('.wbbs').removeClass('hidden');
             $('#ticker').removeClass('hidden');
-
+	}
+	if (data['tradeogreBTC']) {
             $('#volume_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['volume'] * data['tradeogreBTC']['price']).toFixed(8) + ' BTC');
             $('#volume_btcusd_tradeogre').text(parseFloat(data['tradeogreBTC']['price']).toFixed(8))
             increment(data['tradeogreBTC']['price']);
             $('.tradeogre-btc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
-
+	}
+	if (data['tradeogreLTC']) {
             $('#volume_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['volume'] * data['tradeogreLTC']['price']).toFixed(8) + ' LTC');
             $('#volume_ltcusd_tradeogre').text(parseFloat(data['tradeogreLTC']['price']).toFixed(8))
             increment(data['tradeogreLTC']['price']);
             $('.tradeogre-ltc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
-
+	}
         });
 
 //      Create a 5 minute cache of tickers
