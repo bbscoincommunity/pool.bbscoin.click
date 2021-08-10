@@ -94,13 +94,14 @@
     <div id="ticker" class="col-md-6 stats hidden">
         <h3 id="marketHeader">Markets</h3>
         <table>
-            <thead style="background-color:deepskyblue;font-weight:bold;padding:10px 1px 10px 1px;">
-                <tr>
+            <thead>
+                <tr style="background-color:deepskyblue;font-weight:bold;padding:10px 1px 10px 1px;">
                     <td>Exchange</td>
                     <td>Pair</td>
                     <!-- <td>Volume</td> -->
                     <td>Volume</td>
                     <td>Price</td>
+                    <td>USD Vol.</td>
                 </tr>
             </thead>
             <tbody>
@@ -109,70 +110,48 @@
                     <td><a target="_blank" href="https://tradeogre.com/exchange/BTC-BBS">BBS/BTC</a></td>
                     <!-- <td><span id="volume_bbs_tradeogre">N / A</span></td> -->
                     <td><span id="volume_btc_tradeogre"></span></td>
-                    <td><span id="volume_btcusd_tradeogre"></span></td>
+                    <td><span id="price_btc_tradeogre"></span></td>
+                    <td><span id="usd_btc_tradeogre"></span></td>
                 </tr>
                 <tr class="tradeogre-ltc hidden">
                     <td>TradeOgre</td>
                     <td><a target="_blank" href="https://tradeogre.com/exchange/LTC-BBS">BBS/LTC</a></td>
                     <!-- <td><span id="volume_bbs_tradeogre">N / A</span></td> -->
                     <td><span id="volume_ltc_tradeogre"></span></td>
-                    <td><span id="volume_ltcusd_tradeogre"></span></td>
+                    <td><span id="price_ltc_tradeogre"></span></td>
+                    <td><span id="usd_ltc_tradeogre"></span></td>
                 </tr>
                 <tr class="crex24 hidden">
                     <td>Crex24</td>
                     <td><a target="_blank" href="https://crex24.com/exchange/BBS-BTC">BBS/BTC</a></td>
                     <!-- <td><span id="volume_bbs_crex24"></span></td> -->
-                    <td><span id="volume_btc_crex24"></span></td>
-                    <td><span id="volume_usd_crex24"></span></td>
+                    <td><span id="volume_crex24"></span></td>
+                    <td><span id="price_crex24"></span></td>
+                    <td><span id="usd_crex24"></span></td>
                 </tr>
                 <tr class="btrx hidden">
                     <td>Bololex</td>
                     <td><a target="_blank" href="https://bololex.com/trading?symbol=BBST-TRX">BBST/TRX</a></td>
                     <!-- <td><span id="volume_bbs_btrx"></span></td> -->
-                    <td><span id="volume_trx_btrx"></span></td>
-                    <td><span id="volume_usd_btrx"></span></td>
+                    <td><span id="volume_btrx"></span></td>
+                    <td><span id="price_btrx"></span></td>
+                    <td><span id="usd_btrx"></span></td>
                 </tr>
                 <tr class="busdt hidden">
                     <td>Bololex</td>
                     <td><a target="_blank" href="https://bololex.com/trading?symbol=BBST-USDT">BBST/USDT</a></td>
                     <!-- <td><span id="volume_bbs_busdt"></span></td> -->
-                    <td><span id="volume_usdt_busdt"></span></td>
-                    <td><span id="volume_usd_busdt"></span></td>
+                    <td><span id="volume_busdt"></span></td>
+                    <td><span id="price_busdt"></span></td>
+                    <td><span id="usd_busdt"></span></td>
                 </tr>
                 <tr class="wbbs hidden">
                     <td>JustSwap</td>
                     <td><a target="_blank" href="https://justswap.io/#/scan/detail/trx/TB3CjdHfkraU7MJLSQESYPY4U2CMKXi3LB">WBBS/TRX</a></td>
                     <!-- <td><span id="volume_bbs_wbbs"></span></td> -->
-                    <td><span id="volume_trx_wbbs"></span></td>
-                    <td><span id="volume_usd_wbbs"></span></td>
-                </tr>
-                <tr class="alex-xmr hidden">
-                    <td>altex.exchange</td>
-                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=XMR_BBS">BBS/XMR</a></td>
-                    <!-- <td><span id="volume_xmrbbs_altex"></span></td> -->
-                    <td><span id="volume_xmr_altex"></span></td>
-                    <td><span id="volume_xmrusd_altex"></span></td>
-                </tr>
-                <tr class="alex-btc hidden">
-                    <td>altex.exchange</td>
-                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=BTC_BBS">BBS/BTC</a></td>
-                    <!-- <td><span id="volume_btcbbs_altex"></span></td> -->
-                    <td><span id="volume_btc_altex"></span></td>
-                    <td><span id="volume_btcusd_altex"></span></td>
-                </tr>
-                <tr class="alex-ltc hidden">
-                    <td>altex.exchange</td>
-                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=LTC_BBS">BBS/LTC</a></td>
-                    <!-- <td><span id="volume_ltcbbs_altex"></span></td> -->
-                    <td><span id="volume_ltc_altex"></span></td>
-                    <td><span id="volume_ltcusd_altex"></span></td>
-                </tr>
-                <tr class="alex-doge hidden">
-                    <td>altex.exchange</td>
-                    <td><a target="_blank" href="https://altex.exchange/markets&amp;pair=DOGE_BBS">BBS/DOGE</a></td>
-                    <!-- <td><span id="volume_ltcbbs_altex"></span></td> -->
-                    <td><span id="volume_doge_altex"></span></td>
-                    <td><span id="volume_dogeusd_altex"></span></td>
+                    <td><span id="volume_wbbs"></span></td>
+                    <td><span id="price_wbbs"></span></td>
+                    <td><span id="usd_wbbs"></span></td>
                 </tr>
                 <tr>
                     <td><span style="font-size: 11px">Total volume in 24 hours: $<span id="totalVolume"></span></span></td>
@@ -509,43 +488,49 @@
 
 	if (data['crex24BTC']) {
 	    // $('#volume_bbs_crex24').text(parseInt(bbs['QuoteVolume']).toLocaleString() + ' BBS');
-            $('#volume_btc_crex24').text(parseFloat(data['crex24BTC']['volume'] * data['crex24BTC']['price']).toFixed(8) + ' BTC');
-            $('#volume_usd_crex24').text(parseFloat(data['crex24BTC']['price']).toFixed(11))
+            $('#volume_crex24').text(parseFloat(data['crex24BTC']['volume'] * data['crex24BTC']['price']).toFixed(8) + ' BTC');
+            $('#price_crex24').text(parseFloat(data['crex24BTC']['price']).toFixed(11));
+            $('#usd_crex24').text(parseFloat(data['crex24BTC']['volume'] * data['crex24BTC']['usd']).toFixed(6));
             increment(data['crex24BTC']['volume'] * data['crex24BTC']['usd']);
             $('.crex24').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 	}
 	if (data['bololexTRX']) {
-	    $('#volume_trx_btrx').text(parseFloat(data['bololexTRX']['volume'] * data['bololexTRX']['price']).toFixed(8) + ' TRX');
-            $('#volume_usd_btrx').text(parseFloat(data['bololexTRX']['price']).toFixed(8))
+	    $('#volume_btrx').text(parseFloat(data['bololexTRX']['volume'] * data['bololexTRX']['price']).toFixed(8) + ' TRX');
+            $('#price_btrx').text(parseFloat(data['bololexTRX']['price']).toFixed(8));
+            $('#usd_btrx').text(parseFloat(data['bololexTRX']['volume'] * data['bololexTRX']['usd']).toFixed(6));
             increment(data['bololexTRX']['volume'] * data['bololexTRX']['usd']);
             $('.btrx').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 	}
 	if (data['bololexUSDT']) {
-	    $('#volume_usdt_busdt').text(parseFloat(data['bololexUSDT']['volume'] * data['bololexUSDT']['price']).toFixed(8) + ' USDT');
-            $('#volume_usd_busdt').text(parseFloat(data['bololexUSDT']['price']).toFixed(8))
+	    $('#volume_busdt').text(parseFloat(data['bololexUSDT']['volume'] * data['bololexUSDT']['price']).toFixed(8) + ' USDT');
+            $('#price_busdt').text(parseFloat(data['bololexUSDT']['price']).toFixed(8));
+            $('#usd_busdt').text(parseFloat(data['bololexUSDT']['volume'] * data['bololexUSDT']['usd']).toFixed(6));
             increment(data['bololexUSDT']['volume'] * data['bololexUSDT']['usd']);
             $('.busdt').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 	}
 	if (data['justswapTRX']) {
-	    $('#volume_trx_wbbs').text(parseFloat(data['justswapTRX']['volume'] * data['justswapTRX']['price']).toFixed(6) + ' TRX');
-            $('#volume_usd_wbbs').text(parseFloat(data['justswapTRX']['price']).toFixed(6))
+	    $('#volume_wbbs').text(parseFloat(data['justswapTRX']['volume'] * data['justswapTRX']['price']).toFixed(6) + ' TRX');
+            $('#price_wbbs').text(parseFloat(data['justswapTRX']['price']).toFixed(6));
+            $('#usd_wbbs').text(parseFloat(data['justswapTRX']['volume'] * data['justswapTRX']['usd']).toFixed(6));
             increment(data['justswapTRX']['volume'] * data['justswapTRX']['usd']);
             $('.wbbs').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 	}
 	if (data['tradeogreBTC']) {
             $('#volume_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['volume'] * data['tradeogreBTC']['price']).toFixed(8) + ' BTC');
-            $('#volume_btcusd_tradeogre').text(parseFloat(data['tradeogreBTC']['price']).toFixed(8))
+            $('#price_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['price']).toFixed(8));
+            $('#usd_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['volume'] * data['tradeogreBTC']['usd']).toFixed(6));
             increment(data['tradeogreBTC']['volume'] * data['tradeogreBTC']['usd']);
             $('.tradeogre-btc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
 	}
 	if (data['tradeogreLTC']) {
             $('#volume_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['volume'] * data['tradeogreLTC']['price']).toFixed(8) + ' LTC');
-            $('#volume_ltcusd_tradeogre').text(parseFloat(data['tradeogreLTC']['price']).toFixed(8))
+            $('#price_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['price']).toFixed(8));
+            $('#usd_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['volume'] * data['tradeogreLTC']['usd']).toFixed(6));
             increment(data['tradeogreLTC']['volume'] * data['tradeogreLTC']['usd']);
             $('.tradeogre-ltc').removeClass('hidden');
             $('#ticker').removeClass('hidden');
