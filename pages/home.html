@@ -95,7 +95,7 @@
         <h3 id="marketHeader">Markets</h3>
         <table>
             <thead>
-                <tr style="background-color:deepskyblue;font-weight:bold;padding:10px 1px 10px 1px;">
+                <tr style="background-color:deepskyblue;font-weight:bold;" class="py-2">
                     <td>Exchange</td>
                     <td>Pair</td>
                     <td>Price</td>
@@ -488,7 +488,7 @@
 	if (data['crex24BTC']) {
 	    // $('#volume_bbs_crex24').text(parseInt(bbs['QuoteVolume']).toLocaleString() + ' BBS');
             $('#volume_crex24').text(parseFloat(data['crex24BTC']['volume'] * data['crex24BTC']['price']).toFixed(8) + ' BTC');
-            $('#price_crex24').text(parseFloat(data['crex24BTC']['price']).toFixed(11));
+            $('#price_crex24').text(parseFloat(data['crex24BTC']['price']).toFixed(11) + ' BTC');
             $('#usd_crex24').text(parseFloat(data['crex24BTC']['volume'] * data['crex24BTC']['usd']).toFixed(6));
             increment(data['crex24BTC']['volume'] * data['crex24BTC']['usd']);
             $('.crex24').removeClass('hidden');
@@ -496,7 +496,7 @@
 	}
 	if (data['bololexTRX']) {
 	    $('#volume_btrx').text(parseFloat(data['bololexTRX']['volume'] * data['bololexTRX']['price']).toFixed(8) + ' TRX');
-            $('#price_btrx').text(parseFloat(data['bololexTRX']['price']).toFixed(8));
+            $('#price_btrx').text(parseFloat(data['bololexTRX']['price']).toFixed(8) + ' TRX');
             $('#usd_btrx').text(parseFloat(data['bololexTRX']['volume'] * data['bololexTRX']['usd']).toFixed(6));
             increment(data['bololexTRX']['volume'] * data['bololexTRX']['usd']);
             $('.btrx').removeClass('hidden');
@@ -504,7 +504,7 @@
 	}
 	if (data['bololexUSDT']) {
 	    $('#volume_busdt').text(parseFloat(data['bololexUSDT']['volume'] * data['bololexUSDT']['price']).toFixed(8) + ' USDT');
-            $('#price_busdt').text(parseFloat(data['bololexUSDT']['price']).toFixed(8));
+            $('#price_busdt').text(parseFloat(data['bololexUSDT']['price']).toFixed(8) + ' USDT');
             $('#usd_busdt').text(parseFloat(data['bololexUSDT']['volume'] * data['bololexUSDT']['usd']).toFixed(6));
             increment(data['bololexUSDT']['volume'] * data['bololexUSDT']['usd']);
             $('.busdt').removeClass('hidden');
@@ -512,7 +512,7 @@
 	}
 	if (data['justswapTRX']) {
 	    $('#volume_wbbs').text(parseFloat(data['justswapTRX']['volume'] * data['justswapTRX']['price']).toFixed(6) + ' TRX');
-            $('#price_wbbs').text(parseFloat(data['justswapTRX']['price']).toFixed(6));
+            $('#price_wbbs').text(parseFloat(data['justswapTRX']['price']).toFixed(6) + ' TRX');
             $('#usd_wbbs').text(parseFloat(data['justswapTRX']['volume'] * data['justswapTRX']['usd']).toFixed(6));
             increment(data['justswapTRX']['volume'] * data['justswapTRX']['usd']);
             $('.wbbs').removeClass('hidden');
@@ -520,7 +520,7 @@
 	}
 	if (data['tradeogreBTC']) {
             $('#volume_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['volume'] * data['tradeogreBTC']['price']).toFixed(8) + ' BTC');
-            $('#price_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['price']).toFixed(8));
+            $('#price_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['price']).toFixed(8) + ' BTC');
             $('#usd_btc_tradeogre').text(parseFloat(data['tradeogreBTC']['volume'] * data['tradeogreBTC']['usd']).toFixed(6));
             increment(data['tradeogreBTC']['volume'] * data['tradeogreBTC']['usd']);
             $('.tradeogre-btc').removeClass('hidden');
@@ -528,7 +528,7 @@
 	}
 	if (data['tradeogreLTC']) {
             $('#volume_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['volume'] * data['tradeogreLTC']['price']).toFixed(8) + ' LTC');
-            $('#price_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['price']).toFixed(8));
+            $('#price_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['price']).toFixed(8) + ' LTC');
             $('#usd_ltc_tradeogre').text(parseFloat(data['tradeogreLTC']['volume'] * data['tradeogreLTC']['usd']).toFixed(6));
             increment(data['tradeogreLTC']['volume'] * data['tradeogreLTC']['usd']);
             $('.tradeogre-ltc').removeClass('hidden');
