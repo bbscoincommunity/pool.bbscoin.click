@@ -24,7 +24,8 @@ var networkStat = {
 		['bbs.gonspool.com', 'https://bbs.gonspool.com/api'],
 		['bbscoin.my-mining-pool.de', 'https://apibbscoin.my-mining-pool.de'],
 		['webbbs.semipool.com', 'https://webbbs.semipool.com/api/all/network'],
-		['bbs.soloway.in.ua','https://www.bbscoin.click/ext.cgi?bbs.soloway.in.ua:8117']
+		['bbs.soloway.in.ua','https://www.bbscoin.click/ext.cgi?bbs.soloway.in.ua:8117'],
+		['crypton.su/pool/bbs','https://crypton.su/pool/bbs/api/']
 
     ]
 };
