@@ -4,7 +4,17 @@ var api_blockexplorer = "https://explorer.bbscoin.click";
 
 var poolHost = "mine.bbscoin.click";
 
-var irc = "irc.freenode.net/#poolhost";
+// var irc = "irc.freenode.net/#poolhost";
+
+var facebook = "https://www.facebook.com/BBSCoin";
+
+var telegram = "https://t.me/bbscoin";
+
+var twitter = "https://twitter.com/bbs_coin";
+
+var discord = "https://discord.gg/e4QnNYa";
+
+var github = "https://github.com/bbscoincommunity";
 
 var email = "support@bbscoin.click";
 
