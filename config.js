@@ -31,6 +31,7 @@ var networkStat = {
 };
 
 /*
+
 		['pool.bbscoin.xyz', 'https://www.bbscoin.click/ext.cgi?pool.bbscoin.xyz:8117'],
 		['cryptoknight.cc/bbs', 'http://78.46.85.142:2778'],
 		['bbs.gonspool.com', 'http://bbs.gonspool.com:8117'],
