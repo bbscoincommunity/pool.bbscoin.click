@@ -32,10 +32,10 @@ var networkStat = {
     "bbs": [
 		['pool.bbscoin.click', 'https://rpc.bbscoin.click'],
 		['bbs.gonspool.com', 'https://bbs.gonspool.com/api'],
-		['bbscoin.my-mining-pool.de', 'https://apibbscoin.my-mining-pool.de'],
-		['webbbs.semipool.com', 'https://webbbs.semipool.com/api/network'],
-		['bbs.soloway.in.ua','https://www.bbscoin.click/ext.cgi?bbs.soloway.in.ua:8117'],
-		['crypton.su/pool/bbs','https://crypton.su/pool/bbs/api/']
+//		['bbscoin.my-mining-pool.de', 'https://apibbscoin.my-mining-pool.de'],
+		['webbbs.semipool.com', 'https://webbbs.semipool.com/api/pool']
+//		['bbs.soloway.in.ua','https://www.bbscoin.click/ext.cgi?bbs.soloway.in.ua:8117'],
+//		['crypton.su/pool/bbs','https://crypton.su/pool/bbs/api/']
 
     ]
 };
