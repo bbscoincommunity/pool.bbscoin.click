@@ -31,6 +31,7 @@ var themeCss = "themes/default-theme.css";
 var networkStat = {
     "bbs": [
 		['pool.bbscoin.click', 'https://rpc.bbscoin.click'],
+		['bbs.pool-pay.com', 'https://bbs.pool-pay.com:8459'],
 		['bbs.gonspool.com', 'https://bbs.gonspool.com/api'],
 //		['bbscoin.my-mining-pool.de', 'https://apibbscoin.my-mining-pool.de'],
 		['webbbs.semipool.com', 'https://webbbs.semipool.com/api/pool']
