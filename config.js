@@ -2,8 +2,7 @@ var api = "https://rpc.bbscoin.click";
 
 var api_blockexplorer = "https://explorer.bbscoin.click";
 
-//var poolHost = "mine.bbscoin.click";
-var poolHost = "mining.bbscoin.click";
+var poolHost = "mine.bbscoin.click";
 
 // var irc = "irc.freenode.net/#poolhost";
 
