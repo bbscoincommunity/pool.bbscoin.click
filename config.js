@@ -1,5 +1,4 @@
-//var api = "https://rpc.bbscoin.click";
-var api = "https://mining.bbscoin.click:8119";
+var api = "https://rpc.bbscoin.click";
 
 var api_blockexplorer = "https://explorer.bbscoin.click";
 
